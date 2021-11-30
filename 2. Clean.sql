@@ -4,8 +4,8 @@ USE GoogleCaseStudy;
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 /*
 CHECK FOR (AND REMOVE) NON-UNIQUE RECORDS:
-The ride_id field should be a unique data attribute for each record. If the same ride_id is used across multiple records, we don't know which record accurately 
-represents the bike ride. Records that use the same ride_id should be removed from the dataset. 
+The ride_id field should be a unique data attribute for each record. If the same ride_id is used across multiple records, the ID is not unique and it
+is impossible to know which record accurately represents the bike ride. Records that use the same ride_id should be removed from the dataset. 
 */
 
 SELECT
@@ -40,7 +40,7 @@ After performing an initial review of the TripData table, I identified a number 
 	1) Trips with negative ride durations (negative ride times are not possible)
 	2) Trips that lasted less than 1 minute (ride times less than 1 minute may not have been real rides)
 		- Note: In a real-world scenario, I would have consulted with internal team members to determine if 1 minute was an appropriate number to use
-				to determine if a ride was "real" or not.
+			to determine if a ride was "real" or not.
 	3) Trips where the start/end bike station name included "test" (test records should not be used to make business decisions)
 		- Note: There is a legitimate station named 'Watson Testing - Divvy'. Even though its name includes the word 'test', it should be kept in the dataset.
 */
@@ -65,7 +65,7 @@ WHERE
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 /*CHECK FOR (AND UPDATE) NULLS
 Used a CASE statement to count the number of null values in the dataset. I used column ='' instead of column IS NULL because IS NULL returned 0 null values 
-accross the entire dataset (which I knew was incorrect). It turns out that the empty values in this dataset must be empty strings (vs nulls).
+across the entire dataset (which I knew was incorrect). It turns out that the empty values in this dataset must be empty strings (vs nulls).
 */
 
 SELECT
@@ -87,7 +87,7 @@ TripData;
 
 /*
 Over 500,000 records are missing start/end station names. Those same records are also missing station IDs (so I am not able to identify the correct
-station name using an ID). Latitude and longitute coordinates could be used to identify the station name; however, when a station name is missing, the 
+station name using an ID). Latitude and longitude coordinates could be used to identify the station name; however, when a station name is missing, the 
 lat/long coordinates are only accurate to 2 decimal places (would need at least 5 or 6 decimal places to find a specific station location).
 
 The best course of action is to update missing station names to 'Unknown'.
