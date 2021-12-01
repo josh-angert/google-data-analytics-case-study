@@ -64,8 +64,9 @@ WHERE
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 /*CHECK FOR (AND UPDATE) NULLS
-Used a CASE statement to count the number of null values in the dataset. I used column ='' instead of column IS NULL because IS NULL returned 0 null values 
-across the entire dataset (which I knew was incorrect). It turns out that the empty values in this dataset must be empty strings (vs nulls).
+Used a CASE statement to count the number of null values in the dataset. I used " ='' " (instead of "IS NULL") because IS NULL returned 0 null values 
+across the entire dataset (which I knew was incorrect). It turns out that the empty values in this dataset must be empty strings (vs nulls). Using the 
+='' operater returns both NULL values as well as emptry string values.
 */
 
 SELECT
