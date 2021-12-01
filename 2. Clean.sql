@@ -15,8 +15,8 @@ SELECT
 FROM TripData;
 
 /*
-Used a CTE to count how many times a specific ride_id appeared in the dataset. If a ride_id appeared more than once (i.e., row number = 2 or more),
-then the ride_id is a duplicate and records using that ride_id should be removed from the TripData table.
+Used a CTE to count how many times a specific ride_id appeared in the dataset. If a ride_id appeared more than once (i.e., row number is greater than or 
+equal to 2), then the ride_id is a duplicate and records using that ride_id should be removed from the TripData table.
 */
 
 WITH Duplicates AS 
