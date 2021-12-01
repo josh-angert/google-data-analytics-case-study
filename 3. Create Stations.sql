@@ -2,7 +2,7 @@
 CREATING STATION LATITUTDE AND LONGITUDES
 The latitude and longitude fields provided in the TripData table represent the GPS coordinates of the bike that was rented, not the GPS coordinates 
 of the station from which it was rented. Since station information may be useful to plot on map in Tableau (when combined with aggregated trip data),
-we need to calculate the latitude and longitude coordinates for each station in the dataset.
+latitude and longitude coordinates need to be calculated for each station in the dataset. The following two queries accomplish that goal.
 */
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -38,8 +38,8 @@ FROM TripData;
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 /* 
 CALCULATE AVERAGE STATION LAT/LONG
-Now that we have a list station names and various lat/long coordinates associated with each station, we can calculate the average latitude and longitude 
-of each bike ride (grouped by station). This will result in a list of unique stations and their lat/long coordinates. The query below creates a new 
+Now that there is a list station names and various lat/long coordinates associated with each station, the average latitude and longitude 
+of each bike ride (grouped by station) can be calculated. This will result in a list of unique stations and their lat/long coordinates. The query below creates a new 
 table called Stations.
 */
 
