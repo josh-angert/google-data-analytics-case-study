@@ -41,7 +41,7 @@ After performing an initial review of the TripData table, I identified a number 
 	2) Trips that lasted less than 1 minute (ride times less than 1 minute may not have been real rides)
 		- Note: In a real-world scenario, I would have consulted with internal team members to determine if 1 minute was an appropriate number to use
 			to determine if a ride was "real" or not.
-	3) Trips where the start/end bike station name included "test" (test records should not be used to make business decisions)
+	3) Trips where the start/end bike station name included "test" (test records should not be used to make business decisions and should be deleted)
 		- Note: There is a legitimate station named 'Watson Testing - Divvy'. Even though its name includes the word 'test', it should be kept in the dataset.
 */
 
@@ -65,8 +65,8 @@ WHERE
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 /*CHECK FOR (AND UPDATE) NULLS
 Used a CASE statement to count the number of null values in the dataset. I used " ='' " (instead of "IS NULL") because IS NULL returned 0 null values 
-across the entire dataset (which I knew was incorrect). It turns out that the empty values in this dataset must be empty strings (vs nulls). Using the 
-='' operater returns both NULL values as well as emptry string values.
+across the entire dataset (which I knew was incorrect). It turns out that the empty values in this dataset must be empty strings (vs nulls). Using the =''
+operater returns both NULL values as well as emptry string values.
 */
 
 SELECT
@@ -87,11 +87,12 @@ FROM
 TripData;
 
 /*
-Over 500,000 records are missing start/end station names. Those same records are also missing station IDs (so I am not able to identify the correct
-station name using an ID). Latitude and longitude coordinates could be used to identify the station name; however, when a station name is missing, the 
-lat/long coordinates are only accurate to 2 decimal places (would need at least 5 or 6 decimal places to find a specific station location).
+Over 500,000 records are missing start/end station names. Those same records are also missing station IDs. (If they did contain station IDs, the station
+names could be populated using a JOIN statement with Station ID being the join key.) Latitude and longitude coordinates could be used to identify the station
+name; however, when a station name is missing, the lat/long coordinates are only accurate to 2 decimal places (would need at least 5 or 6 decimal places 
+to find a specific station location).
 
-The best course of action is to update missing station names to 'Unknown'.
+The best course of action here is to keep these records in the dataset, but update missing station names to 'Unknown'.
 */
 
 UPDATE TripData
