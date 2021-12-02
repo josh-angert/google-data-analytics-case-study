@@ -35,7 +35,10 @@ To answer this business question, I have been given access to Cyclistic's histor
 
 To prepare the data for analysis, I went through the following steps:
 1. Downloaded 12 months of trip data (stored as 12 separate CSV files) with a total of ~5 million rows
-2. 
+2. Noted the following **_limitations_** with the data:
+   - Does not contain rider info
+   - Does not contain station info
+   - Item 3
 
  **_Limitations of the data:_**
  - Does not contain rider info
