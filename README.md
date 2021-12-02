@@ -1,5 +1,10 @@
 # Google Data Analytics Case Study: Cyclistic Bike-Share Analysis
 
+### Table of Contents
+
+
+
+
 
 
 ### 1. Introduction 
@@ -23,7 +28,9 @@ To prepare the data for analysis, I went through the following steps:
 1. Downloaded 12 months of trip data (stored as 12 separate CSV files) with a total of ~5 million rows
 2. 
 
- 
+ **_Limitations of the data:_**
+ - Does not contain rider info
+ - 
 
 ### 4. Processing/Cleaning the Data
 
