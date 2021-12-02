@@ -15,14 +15,19 @@ Three questions will guide the future marketing program:
 
 The Director of Marketing has assigned me with the first question: How do annual members and casual riders use Cyclistic bikes differently?
 
-
 ### 3. Prepraring the Data
-
-### 4. Processing/Analyzing the Data
-
-### 5. Sharing/Visualizing the Data
+The data 
 
 
-### 6. Conclusion
+
+### 4. Processing/Cleaning the Data
+
+
+### 5. Analyzing the Data
+
+### 6. Sharing/Visualizing the Data
+
+
+### 7. Conclusion
 
 
