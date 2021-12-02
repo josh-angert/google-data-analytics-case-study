@@ -2,7 +2,13 @@
 
 ### Table of Contents
 
-
+* [Introduction](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/README.md#1-introduction)
+* Business Task
+* Preparing the Data
+* Processing/Cleaning the Data
+* Analyzing the Data
+* Sharing/Visualizing the Data
+* Conclusion
 
 
 
