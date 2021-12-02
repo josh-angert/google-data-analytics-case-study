@@ -5,7 +5,7 @@
 * [Introduction](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/README.md#1-introduction)
 * [Business Task](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/README.md#2-business-task)
 * [Preparing the Data](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/README.md#3-prepraring-the-data)
-* Processing/Cleaning the Data
+* [Processing/Cleaning the Data](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/README.md#4-processingcleaning-the-data)
 * Analyzing the Data
 * Sharing/Visualizing the Data
 * Conclusion
