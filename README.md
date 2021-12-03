@@ -74,12 +74,11 @@ To prepare the data for analysis, I went through the following steps:
 
 ### 4. Processing/Cleaning the Data
 -----------
-The section highlights how I went about preparing the data for analysis:
+This section highlights how I went about preparing the data for analysis:
 - **_Tools used_**: I used Microsoft SQL Server to process the data, primarily because it is widely rated as one of the top relational database management systems in the market, and this case study provided me with a great opportunity to become more familiar with the software.
 - **_Steps Taken_**: 
   - Imported the 12 CSV files into SQL Server
-  - Combined all 12 CSV files and created new data attributes (which will be used during analysis) using temp tables, Unions, Joins and CREATE/ALTER commands. [Here is a link to the SQL script](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/1.%20Organize.sql). 
-  - The script includes code which created new fields for:
+  - Combined all 12 CSV files and created new data attributes (which will be used during analysis) using temp tables, Unions, Joins and CREATE/ALTER commands. [Here is a link to the SQL script](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/1.%20Organize.sql). The new data attributes created by this code include new fields for:
     - Duration of the ride (in minutes and seconds)
     - Starting day number (i.e., 1 = Sunday, 2 = Monday, etc.) & Starting day name (i.e., name of the day of the week)
     - Ending day number & name
@@ -87,13 +86,18 @@ The section highlights how I went about preparing the data for analysis:
     - Day type (i.e., weeekend or week day)
     - Season
   - Cleaned the data (removed non-unique/duplicate values & incorrect data, checked for NULL values and removed NULLs using CTEs, conditional aggregation and DELETE/UPDATE commands. [Here is a link to the SQL script](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/2.%20Clean.sql).
-    - Note, the script contains comments that explain how the queries work and why I chose to use certain queries. 
+    - Note, the script contains comments which explain why I chose to use certain queries, and the results of those queries). 
   - Created a new table, called Stations. The table contains disticnt list of the stations listed in the dataset (784 stations) and their respective latitude/longitude coordinates. I utilized temp tables, Unions and SELECT/INSERT INTO commands. [Here is a link to the SQL script](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/3.%20Create%20Stations.sql).
 
 
 ### 5. Analyzing the Data
 -----------
-
+I used SQL Server in this stage as well, and wrote various queries (using CASE statements, Window Functions, Joins and aggregations) in order to gain insights about the differences between Annual Members and Casual riders. [Here is a link to the SQL queries](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/4.%20Analyze.sql) (**Note**: the code include comments which explain why I chose to use certain queries, and the results of those queries). Here's a brief summary of some of the the data I analyzed:
+- Total number of bike rides (for the full 12-month period): There are about 8% more bike rides with Annual Members than there are with casual riders (about 400,000 more).
+- Number or rides per day and month
+- Average duration of rides (by day and month)
+- Number of rides by bike type (i.e., electric, docked or classic), grouped by member type
+- Number or riders per station (I combined station lat/long coordinates with the total number of rides from each station, allowing me to create a heat map in Tableau)
 
 
 ### 6. Visualizing/Sharing the Data
