@@ -46,7 +46,7 @@ To prepare the data for analysis, I went through the following steps:
 1. Downloaded 12 months of trip data (stored as 12 separate CSV files with a total of ~5 million rows). The files represent trips from October 2020 - September 2021.
 2. Explored the files to get a sense of the structure of the data, the attributes contained within each file and each attribute's data types:
 
-    | **Column**        | **Description**  | **Type**  |
+    | **Column Name**        | **Description**  | **Type**  |
     | ------------- |-------------| ---------|
     | ride_id       | ID of the bike ride | String |
     | rideable_type | Type of bike rented (classic, docked or electric)  |   String |
@@ -109,6 +109,14 @@ And here is a screenshot of the dashboard:
 ### 7. Conclusion
 -----------
 Here are the key differences between Annual Members and Casual Riders (all insights are derived based on bike rides taken between October 2020 - September 2021):
+
+| **Measure**        | **Observation**  |
+| ------------- |-------------|
+| # of Rides    | There were **8% more bike rides** with Annual Members than there were with Casual Riders |
+| Ride Duration | Rides with Casual Riders, on average, last **2X longer** than rides with Annual Members <br>(Avg duration of 32 min for Casual Riders vs 14 min for Annual Members)  | 
+| Day of Week   |**Casual Riders prefer weekends**, whereas **Annual Members prefer the weekdays** (Mon - Fri) |
+
+
 1. There were **8% more bike rides** with Annual Members than there were with Casual Riders
 2. Rides with Casual Riders, on average, last **2X longer** than rides with Annual Members (Avg duration of 32 min for Casual Riders vs 14 min for Annual Members)
 3. Weekends are more popular with Casual Riders, whereas the majority of rides with Annual Members took place during the weeek (Mon - Fri)
