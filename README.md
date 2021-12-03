@@ -4,10 +4,10 @@
 
 * [Introduction](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/README.md#1-introduction)
 * [Business Task](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/README.md#2-business-task)
-* [Preparing the Data](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/README.md#3-prepraring-the-data)
+* [Preparing the Data](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/README.md#3-preparing-the-data)
 * [Processing/Cleaning the Data](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/README.md#4-processingcleaning-the-data)
 * [Analyzing the Data](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/README.md#5-analyzing-the-data)
-* [Sharing/Visualizing the Data](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/README.md#5-analyzing-the-data)
+* [Visualizing/analyzing the Data](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/README.md#5-analyzing-the-data)
 * [Conclusion](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/README.md#5-analyzing-the-data)
 
 
@@ -26,7 +26,7 @@ I created various SQL queries (using Microsoft SQL Server Management Studio) and
 - **Tableau Dashboard**: 
   - [Click Here](https://public.tableau.com/views/Book2_16380472614180/Dashboard42?:language=en-US&:retry=yes&:display_count=n&:origin=viz_share_link)
 
-The content in the following sections describes, in more detail, the process I followed to complete this case study.
+The content in the following sections describes the process I followed to complete this case study.
 
 
 ### 2. Business Task
@@ -76,7 +76,7 @@ To prepare the data for analysis, I went through the following steps:
 -----------
 The steps listed below highlight the process I followed to organize, clean and transform the data to prepare it for analysis:
 - **_Tools used_**: I used Microsoft SQL Server to process the data, primarily because it is widely rated as one of the top relational database management systems in the market, and this case study provided me with a great opportunity to become more familiar with the software.
-- **_Organized the Data_**: 
+- **_Organized the Data_**: Created tables in SQL Server 
 
 
 ### 5. Analyzing the Data
@@ -84,9 +84,9 @@ The steps listed below highlight the process I followed to organize, clean and t
 
 
 
-### 6. Sharing/Visualizing the Data
+### 6. Visualizing/Sharing the Data
 -----------
-
+I created a dashboard within Tableau 
 https://public.tableau.com/views/Book2_16380472614180/Dashboard42?:language=en-US&:display_count=n&:origin=viz_share_link
 
 
