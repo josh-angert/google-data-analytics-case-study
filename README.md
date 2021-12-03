@@ -105,7 +105,7 @@ I used SQL Server in this stage as well, and wrote various queries (using CASE s
 I created a dashboard within Tableau 
 https://public.tableau.com/views/Book2_16380472614180/Dashboard42?:language=en-US&:display_count=n&:origin=viz_share_link
 
-<img src="https://github.com/josh-angert/google-data-analytics-case-study/blob/main/Dashboard%20screenshot.PNG" width="100">
+<img src="https://github.com/josh-angert/google-data-analytics-case-study/blob/main/Dashboard%20screenshot.PNG" width="600">
 
 ### 7. Conclusion
 -----------
