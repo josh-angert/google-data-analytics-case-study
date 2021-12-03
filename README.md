@@ -57,19 +57,24 @@ To prepare the data for analysis, I went through the following steps:
    - **_No rider information_**: The dataset did not include any personal or demographic information about the riders. Therefore, I won't be able to identify any rider trends based on age, gender, etc...
    - **_No distance information_**: The dataset _does_ include latitude/longitude coordinates for the start/end of the bike rides. However, using the lat/long data provided, I could only calculate the straight-line (Euclidean) distance between the starting and ending points (not the actual distance the rider travled on the road). 
         - For example, the starting/ending locations may only be 0.5 miles apart, however the rider may have rode 2 or 3 miles around the city before returing the bike to the ending location. 
-   - **_No station information_**: The latitude and longitude fields provided in the dataset represent the GPS coordinates of the bike that was rented, not the GPS coordinates of the station from which it was rented/returned. For example, one station may have thousands of lat/long coordinates associated with it (vs a single lat/long for the station itself).
+   - **_No station information_**: The only station information in the dataset is the name of the starting & ending stations. The latitude and longitude fields provided in the dataset represent the GPS coordinates of the bike that was rented, not the GPS coordinates of the station from which it was rented/returned. For example, each station in the dataset has housands of lat/long coordinates associated with it (vs a single lat/long for the station itself).
 
 
 ### 4. Processing/Cleaning the Data
 -----------
-
+The steps listed below highlight the process I followed to organize, clean and transform the data to prepare it for analysis
 
 
 ### 5. Analyzing the Data
 -----------
 
+
+
 ### 6. Sharing/Visualizing the Data
 -----------
+
+https://public.tableau.com/views/Book2_16380472614180/Dashboard42?:language=en-US&:display_count=n&:origin=viz_share_link
+
 
 ### 7. Conclusion
 -----------
