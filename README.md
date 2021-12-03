@@ -81,16 +81,16 @@ This section highlights how I went about preparing the data for analysis:
     - Starting day number (i.e., 1 = Sunday, 2 = Monday, etc.) & Starting day name (i.e., name of the day of the week)
     - Ending day number & name
     - Month number & month name
-    - Day type (i.e., weeekend or week day)
+    - Day type (i.e., weekend or week day)
     - Season
   - Cleaned the data (removed non-unique/duplicate values & incorrect data, checked for NULL values and removed NULLs using CTEs, conditional aggregation and DELETE/UPDATE commands. [Here is a link to the SQL script](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/2.%20Clean.sql).
     - Note, the script contains comments which explain why I chose to use certain queries, and the results of those queries). 
-  - Created a new table, called Stations. The table contains disticnt list of the stations listed in the dataset (784 stations) and their respective latitude/longitude coordinates. I utilized temp tables, Unions and SELECT/INSERT INTO commands. [Here is a link to the SQL script](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/3.%20Create%20Stations.sql).
+  - Created a new table, called Stations. The table contains a distinct list of stations from the dataset (784 stations) and their respective latitude/longitude coordinates. I utilized temp tables, Unions and SELECT/INSERT INTO commands. [Here is a link to the SQL script](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/3.%20Create%20Stations.sql).
 
 
 ### 5. Analyzing the Data
 -----------
-I used **_Microfto SQL Server_** in this stage as well, and wrote various queries (using CASE statements, Window Functions, Joins and aggregations) in order to gain insights about the differences between Annual Members and Casual riders. [Here is a link to the SQL code](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/4.%20Analyze.sql) (**Note**: the code include comments which explain why I chose to use certain queries, and the results of those queries). The following is a brief list of some of the queries used:
+I used **_Microsoft SQL Server_** in this stage as well, and wrote various queries (using CASE statements, Window Functions, Joins and aggregations) in order to gain insights about the differences between Annual Members and Casual riders. [Here is a link to the SQL code](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/4.%20Analyze.sql) (**Note**: the code includes comments which explain why I chose to use certain queries, and the results of those queries). The following is a brief list of some of the queries used:
 - Total number of bike rides (for the full 12-month period): There are about 8% more bike rides with Annual Members than there are with casual riders (about 400,000 more).
 - Number or rides per day and month
 - Average duration of rides (by day and month)
@@ -108,13 +108,13 @@ And here is a screenshot of the dashboard:
 
 ### 7. Conclusion
 -----------
-Here are the key differences between Annual Members and Casual Riders (all insights are derived based on bike rides taken between October 2020 - September 2021):
+Here are the key differences between Annual Members and Casual Riders (source data is from October 2020 - September 2021):
 
 | **Measure**       | **Insights**  |
 | ----------------- |-------------|
 | # of Rides        | There were **8% more bike rides** with Annual Members than there were with Casual Riders          |
 | Time of Year      | Peak popularity for both Annual Members _and_ Casual Riders is **between June and September**        |
 | Day of Week       |**Casual Riders prefer _weekends_**, whereas **Annual Members prefer the _weekdays_**              |
-| Avg Ride Duration | Casual Riders, on average, ride their bikes **2X longer** than Annual Members (average duration of 32 min for Casual Riders vs 14 min for Annual Members)|
+| Avg Ride Duration | Casual Riders, on average, ride their bikes about **2X longer** than Annual Members (average duration of 32 min for Casual Riders vs 14 min for Annual Members)|
 | Type of Bike      | Classic bikes account for **59% of rides with Members**, whereas Casual Riders use Classic bikes 48% of the time. Also, Casual Riders use Docked Bikes **7% more often than Members**  |                               
 | Popular Stations  | Casual Riders overwhelmingly start their rides **near tourist attractions** (i.e., Millennium Park, Navy Pier, etc.) whereas the stations with the highest activity for Annual Members are spread more evenly throughout the city     |
