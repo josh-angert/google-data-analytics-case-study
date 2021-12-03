@@ -104,7 +104,7 @@ To wrap things up, I created a dashboard (using **_Tableau_**) to summarize the 
 
 And here is a screenshot of the dashboard:
 
-<img src="https://github.com/josh-angert/google-data-analytics-case-study/blob/main/Tableau%20Dashboard%20Screenshot.PNG" width="700">
+<img src="https://github.com/josh-angert/google-data-analytics-case-study/blob/main/Tableau%20Dashboard%20screen%20capture.PNG" width="700">
 
 ### 7. Conclusion
 -----------
