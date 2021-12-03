@@ -33,7 +33,7 @@ The Director of Marketing has assigned me with the first question: How do annual
 To answer this business question, I have been given access to Cyclistic's historical trip data, [located here](https://divvy-tripdata.s3.amazonaws.com/index.html). (Note: The trip datasets have a different name (i.e., Divvy) because Cyclistic is a fictional company. For the purposes of this case study, using the Divvy trip datasets are appropriate and will enable me to answer the business question. The data has been made available by Motivate International Inc. under this [license](https://www.divvybikes.com/data-license-agreement).
 
 To prepare the data for analysis, I went through the following steps:
-1. Downloaded 12 months of trip data (stored as 12 separate CSV files with a total of ~5 million rows). The files represent trips from October 2020 - September 2021
+1. Downloaded 12 months of trip data (stored as 12 separate CSV files with a total of ~5 million rows). The files represent trips from October 2020 - September 2021.
 2. Explored the files to get a sense of the structure of the data, the attributes contained within each file and each attribute's data types:
 
     | **Column**        | **Description**  | **Type**  |
@@ -54,9 +54,10 @@ To prepare the data for analysis, I went through the following steps:
 
 
 3. Identified the following limitations with the data:
-   - **_No rider information_**: 
-   - **_No distance information_**:
-   - **_No station information_**:
+   - **_No rider information_**: The dataset did not include any data ab
+   - **_No distance information_**: The dataset _does_ include latitude/longitude coordinates for the start/end of the bike rides. However, using the lat/long data provided, I could only calculate the straight-line (Euclidean) distance between the starting and ending points (not the actual distance the rider travled on the road). 
+        - For example, the starting/ending locations may only be 0.5 miles apart, however the rider may have rode 2 or 3 miles around the city before returing the bike to the ending location. 
+   - **_No station information_**: The latitude and longitude fields provided in the dataset represent the GPS coordinates of the bike that was rented, not the GPS coordinates of the station from which it was rented/returned. For example, one station may have thousands of lat/long coordinates associated with it (vs a single lat/long for the station itself).
 
 
 ### 4. Processing/Cleaning the Data
