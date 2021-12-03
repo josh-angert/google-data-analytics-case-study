@@ -78,7 +78,7 @@ The section highlights how I went about preparing the data for analysis:
 - **_Tools used_**: I used Microsoft SQL Server to process the data, primarily because it is widely rated as one of the top relational database management systems in the market, and this case study provided me with a great opportunity to become more familiar with the software.
 - **_Steps Taken_**: 
   - Imported the 12 CSV files into SQL Server
-  - Combined all 12 CSV files and created new data attributes (which will be used during analysis) using temp tables, Unions, Joins and CREATE/ALTER commands [Here is a link to the SQL script](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/1.%20Organize.sql). 
+  - Combined all 12 CSV files and created new data attributes (which will be used during analysis) using temp tables, Unions, Joins and CREATE/ALTER commands. [Here is a link to the SQL script](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/1.%20Organize.sql). 
   - The script includes code which created new fields for:
     - Duration of the ride (in minutes and seconds)
     - Starting day number (i.e., 1 = Sunday, 2 = Monday, etc.) & Starting day name (i.e., name of the day of the week)
@@ -86,6 +86,9 @@ The section highlights how I went about preparing the data for analysis:
     - Month number & month name
     - Day type (i.e., weeekend or week day)
     - Season
+  - Cleaned the data (removed non-unique/duplicate values & incorrect data, checked for NULL values and removed NULLs using CTEs, conditional aggregation and DELETE/UPDATE commands. [Here is a link to the SQL script](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/2.%20Clean.sql).
+    - Note, the script contains comments that explain how the queries work and why I chose to use certain queries. 
+  - Created a new table, called Stations. The table contains disticnt list of the stations listed in the dataset (784 stations) and their respective latitude/longitude coordinates. I utilized temp tables, Unions and SELECT/INSERT INTO commands. [Here is a link to the SQL script](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/3.%20Create%20Stations.sql).
 
 
 ### 5. Analyzing the Data
