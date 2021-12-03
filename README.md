@@ -78,8 +78,14 @@ The section highlights how I went about preparing the data for analysis:
 - **_Tools used_**: I used Microsoft SQL Server to process the data, primarily because it is widely rated as one of the top relational database management systems in the market, and this case study provided me with a great opportunity to become more familiar with the software.
 - **_Steps Taken_**: 
   - Imported the 12 CSV files into SQL Server
-  - Utilized temp tables, Unions, Joins and CREATE/ALTER commands to combine all 12 files, and also to create new data attributes (which will be needed during analysis). [Here is a link to the SQL script](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/1.%20Organize.sql). The new data attributes inlude fields for:
-    - 
+  - Combined all 12 CSV files and created new data attributes (which will be used during analysis) using temp tables, Unions, Joins and CREATE/ALTER commands [Here is a link to the SQL script](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/1.%20Organize.sql). 
+  - The script includes code which created new fields for:
+    - Duration of the ride (in minutes and seconds)
+    - Starting day number (i.e., 1 = Sunday, 2 = Monday, etc.) & Starting day name (i.e., name of the day of the week)
+    - Ending day number & name
+    - Month number & month name
+    - Day type (i.e., weeekend or week day)
+    - Season
 
 
 ### 5. Analyzing the Data
