@@ -113,7 +113,7 @@ Here are the key differences between Annual Members and Casual Riders (all insig
 | **Measure**       | **Insights**  |
 | ----------------- |-------------|
 | # of Rides        | There were **8% more bike rides** with Annual Members than there were with Casual Riders          |
-| Time of Year      | Peak popularity, for Annual Members _and_ Casual Riders, is **between June and September**        |
+| Time of Year      | Peak popularity for both Annual Members _and_ Casual Riders is **between June and September**        |
 | Day of Week       |**Casual Riders prefer _weekends_**, whereas **Annual Members prefer the _weekdays_**              |
 | Avg Ride Duration | Casual Riders, on average, ride their bikes **2X longer** than Annual Members (average duration of 32 min for Casual Riders vs 14 min for Annual Members)|
 | Type of Bike      | Classic bikes account for **59% of rides with Members**, whereas Casual Riders use Classic bikes 48% of the time. Also, Casual Riders use Docked Bikes **7% more often than Members**  |                               
