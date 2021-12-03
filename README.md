@@ -7,7 +7,7 @@
 * [Preparing the Data](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/README.md#3-preparing-the-data)
 * [Processing/Cleaning the Data](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/README.md#4-processingcleaning-the-data)
 * [Analyzing the Data](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/README.md#5-analyzing-the-data)
-* [Visualizing/analyzing the Data](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/README.md#5-analyzing-the-data)
+* [Visualizing/analyzing the Data](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/README.md#6-visualizingsharing-the-data)
 * [Conclusion](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/README.md#5-analyzing-the-data)
 
 
@@ -74,9 +74,12 @@ To prepare the data for analysis, I went through the following steps:
 
 ### 4. Processing/Cleaning the Data
 -----------
-The steps listed below highlight the process I followed to organize, clean and transform the data to prepare it for analysis:
+The section highlights how I went about preparing the data for analysis:
 - **_Tools used_**: I used Microsoft SQL Server to process the data, primarily because it is widely rated as one of the top relational database management systems in the market, and this case study provided me with a great opportunity to become more familiar with the software.
-- **_Organized the Data_**: Created tables in SQL Server 
+- **_Steps Taken_**: 
+  - Imported the 12 CSV files into SQL Server
+  - Utilized temp tables, Unions, Joins and CREATE/ALTER commands to combine all 12 files, and also to create new data attributes (which will be needed during analysis). [Here is a link to the SQL script](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/1.%20Organize.sql). The new data attributes inlude fields for:
+    - 
 
 
 ### 5. Analyzing the Data
