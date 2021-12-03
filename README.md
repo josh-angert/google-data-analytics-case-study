@@ -31,14 +31,12 @@ The content in the following sections describes the process I followed to comple
 
 ### 2. Business Task
 -----------
-The Director of Marketing has set a clear goal: Design marketing strategies aimed at converting casual riders into annual members. In order to do that, however, the marketing analyst team needs to better understand how annual members and casual riders differ, why casual riders would buy a membership, and how digital media could affect their marketing tactics. 
-
-Three questions will guide the future marketing program:
+The Director of Marketing has set a clear goal: Design marketing strategies aimed at converting casual riders into annual members. Three questions will guide the future marketing program:
 1. How do annual members and casual riders use Cyclistic bikes differently?
 2. Why would casual riders buy Cyclistic annual memberships?
 3. How can Cyclistic use digital media to influence casual riders to become members?
 
-The Director of Marketing has assigned me with the first question: How do annual members and casual riders use Cyclistic bikes differently?
+The Director of Marketing has assigned me with the first question: _How do annual members and casual riders use Cyclistic bikes differently?_
 
 ### 3. Preparing the Data
 -----------
@@ -92,7 +90,7 @@ This section highlights how I went about preparing the data for analysis:
 
 ### 5. Analyzing the Data
 -----------
-I used **_Microfto SQL Server_** in this stage as well, and wrote various queries (using CASE statements, Window Functions, Joins and aggregations) in order to gain insights about the differences between Annual Members and Casual riders. [Here is a link to the SQL code](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/4.%20Analyze.sql) (**Note**: the code include comments which explain why I chose to use certain queries, and the results of those queries). Here's a brief list of some of the queries used:
+I used **_Microfto SQL Server_** in this stage as well, and wrote various queries (using CASE statements, Window Functions, Joins and aggregations) in order to gain insights about the differences between Annual Members and Casual riders. [Here is a link to the SQL code](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/4.%20Analyze.sql) (**Note**: the code include comments which explain why I chose to use certain queries, and the results of those queries). The following is a brief list of some of the queries used:
 - Total number of bike rides (for the full 12-month period): There are about 8% more bike rides with Annual Members than there are with casual riders (about 400,000 more).
 - Number or rides per day and month
 - Average duration of rides (by day and month)
