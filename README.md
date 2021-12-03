@@ -110,14 +110,14 @@ And here is a screenshot of the dashboard:
 -----------
 Here are the key differences between Annual Members and Casual Riders (all insights are derived based on bike rides taken between October 2020 - September 2021):
 
-| **Measure**        | **Observation**  |
-| ------------- |-------------|
-| # of Rides    | There were **8% more bike rides** with Annual Members than there were with Casual Riders |
-| Time of Year  | Peak popularity, for Annual Members _and_ Casual Riders, is **between June and September** |
-| Day of Week   |**Casual Riders prefer weekends**, whereas **Annual Members prefer the weekdays** |
-| Avg Ride Duration | Rides with Casual Riders, on average, last **2X longer** than rides with Annual Members <br>(Avg duration of 32 min for Casual Riders vs 14 min for Annual Members)  | 
-| Type of Bike | TBD  | 
-| Popular Stations | Casual Riders |
+| **Measure**       | **Insights**  |
+| ----------------- |-------------|
+| # of Rides        | There were **8% more bike rides** with Annual Members than there were with Casual Riders          |
+| Time of Year      | Peak popularity, for Annual Members _and_ Casual Riders, is **between June and September**        |
+| Day of Week       |**Casual Riders prefer _weekends_**, whereas **Annual Members prefer the _weekdays_**              |
+| Avg Ride Duration | Casual Riders, on average, ride their bikes **2X longer** than Annual Members (average duration of 32 min for Casual Riders vs 14 min for Annual Members)|
+| Type of Bike      | Classic bikes account for **59% of rides with Members**, whereas Casual Riders use Classic bikes 48% of the time. Also, Casual Riders use Docked Bikes **7% more often than Members**  |                               
+| Popular Stations  | Casual Riders                                                                                     |
 
 4. The **majority of Annual Members prefer to ride Classic bikes (59%)**, with Electric bikes being 2nd most popular (31%) and Docked bikes being least popular (10%)
 5. Casual Riders also prefer Classic bikes (48% of rides), however **Casual Riders use Docked bikes 7% more often than Annual Members** (17% vs 10%, respectively
