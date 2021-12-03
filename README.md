@@ -118,7 +118,3 @@ Here are the key differences between Annual Members and Casual Riders (all insig
 | Avg Ride Duration | Casual Riders, on average, ride their bikes **2X longer** than Annual Members (average duration of 32 min for Casual Riders vs 14 min for Annual Members)|
 | Type of Bike      | Classic bikes account for **59% of rides with Members**, whereas Casual Riders use Classic bikes 48% of the time. Also, Casual Riders use Docked Bikes **7% more often than Members**  |                               
 | Popular Stations  | Casual Riders                                                                                     |
-
-4. The **majority of Annual Members prefer to ride Classic bikes (59%)**, with Electric bikes being 2nd most popular (31%) and Docked bikes being least popular (10%)
-5. Casual Riders also prefer Classic bikes (48% of rides), however **Casual Riders use Docked bikes 7% more often than Annual Members** (17% vs 10%, respectively
-
