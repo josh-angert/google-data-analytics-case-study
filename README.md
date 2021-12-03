@@ -8,7 +8,7 @@
 * [Processing/Cleaning the Data](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/README.md#4-processingcleaning-the-data)
 * [Analyzing the Data](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/README.md#5-analyzing-the-data)
 * [Visualizing/Sharing the Data](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/README.md#6-visualizingsharing-the-data)
-* [Conclusion](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/README.md#5-analyzing-the-data)
+* [Conclusion](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/README.md#7-conclusion)
 
 
 
