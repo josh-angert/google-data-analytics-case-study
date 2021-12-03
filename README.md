@@ -53,8 +53,8 @@ To prepare the data for analysis, I went through the following steps:
     | member_casual | Type of rider (Annual Member or Casual)   |    String |
 
 
-3. Identified the following limitations with the data:
-   - **_No rider information_**: The dataset did not include any data ab
+3. Identified the following limitations about the data:
+   - **_No rider information_**: The dataset did not include any personal or demographic information about the riders. Therefore, I won't be able to identify any rider trends based on age, gender, etc...
    - **_No distance information_**: The dataset _does_ include latitude/longitude coordinates for the start/end of the bike rides. However, using the lat/long data provided, I could only calculate the straight-line (Euclidean) distance between the starting and ending points (not the actual distance the rider travled on the road). 
         - For example, the starting/ending locations may only be 0.5 miles apart, however the rider may have rode 2 or 3 miles around the city before returing the bike to the ending location. 
    - **_No station information_**: The latitude and longitude fields provided in the dataset represent the GPS coordinates of the bike that was rented, not the GPS coordinates of the station from which it was rented/returned. For example, one station may have thousands of lat/long coordinates associated with it (vs a single lat/long for the station itself).
@@ -62,6 +62,7 @@ To prepare the data for analysis, I went through the following steps:
 
 ### 4. Processing/Cleaning the Data
 -----------
+
 
 
 ### 5. Analyzing the Data
