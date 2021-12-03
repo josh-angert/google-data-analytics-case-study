@@ -18,12 +18,13 @@
 The scenario for this Case Study is as follows: I am a junior data analyst working in the marketing analyst team at Cyclistic, a fictional bike-share company in Chicago. The director of marketing believes the company’s future success depends on maximizing the number of annual memberships. Therefore, the marketing team wants to understand how casual riders and annual members use Cyclistic bikes differently. (Customers who purchase single-ride or full-day passes are referred to as casual riders. Customers who purchase annual memberships are Cyclistic members.)
 
 I used various SQL queries and Tableau to process, analyze and visualize the data from this case study. Links to the SQL scripts and my Tableau dashboard can be found below. 
-- SQL scripts:
+- **SQL scripts**:
   - [Organizing the data](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/1.%20Organize.sql)
   - [Cleaning the data](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/2.%20Clean.sql)
   - [Creating a new "Stations" table](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/3.%20Create%20Stations.sql)
   - [Analyzing the data](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/4.%20Analyze.sql)
-- Tableau Dashboard: [Click Here](https://public.tableau.com/views/Book2_16380472614180/Dashboard42?:language=en-US&:retry=yes&:display_count=n&:origin=viz_share_link)
+- **Tableau Dashboard**: 
+  - [Click Here](https://public.tableau.com/views/Book2_16380472614180/Dashboard42?:language=en-US&:retry=yes&:display_count=n&:origin=viz_share_link)
 
 The content in the following sections describes in more detail the process I followed to complete this case study.
 
