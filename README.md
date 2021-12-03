@@ -40,7 +40,7 @@ Three questions will guide the future marketing program:
 
 The Director of Marketing has assigned me with the first question: How do annual members and casual riders use Cyclistic bikes differently?
 
-### 3. Prepraring the Data
+### 3. Preparing the Data
 -----------
 To answer this business question, I have been given access to Cyclistic's historical trip data, [located here](https://divvy-tripdata.s3.amazonaws.com/index.html). (Note: The trip datasets have a different name (i.e., Divvy) because Cyclistic is a fictional company. For the purposes of this case study, using the Divvy trip datasets are appropriate and will enable me to answer the business question. The data has been made available by Motivate International Inc. under this [license](https://www.divvybikes.com/data-license-agreement).
 
@@ -67,9 +67,9 @@ To prepare the data for analysis, I went through the following steps:
 
 3. Identified the following limitations about the data:
    - **_No rider information_**: The dataset did not include any personal or demographic information about the riders. Therefore, I won't be able to identify any rider trends based on age, gender, etc...
-   - **_No distance information_**: The dataset _does_ include latitude/longitude coordinates for the start/end of the bike rides. However, using the lat/long data provided, I could only calculate the straight-line (Euclidean) distance between the starting and ending points (not the actual distance the rider travled on the road). 
-        - For example, the starting/ending locations may only be 0.5 miles apart, however the rider may have rode 2 or 3 miles around the city before returing the bike to the ending location. 
-   - **_No station information_**: The only station information in the dataset is the name of the starting & ending stations. The latitude and longitude fields provided in the dataset represent the GPS coordinates of the bike that was rented, not the GPS coordinates of the station from which it was rented/returned. For example, each station in the dataset has housands of lat/long coordinates associated with it (vs a single lat/long for the station itself).
+   - **_No distance information_**: The dataset _does_ include latitude/longitude coordinates for the start/end of the bike rides. However, using the lat/long data provided, I could only calculate the straight-line (Euclidean) distance between the starting and ending points (not the actual distance the rider traveled on the road). 
+        - For example, the starting/ending locations may only be 0.5 miles apart, however the rider may have taken the bike 2 or 3 miles around the city before returning the bike to the ending location. 
+   - **_No station information_**: The only station information in the dataset is the name of the starting & ending stations. The latitude and longitude fields provided in the dataset represent the GPS coordinates of the bike that was rented, not the GPS coordinates of the station from which it was rented/returned. For example, each station in the dataset has thousands of lat/long coordinates associated with it (vs a single lat/long for the station itself).
 
 
 ### 4. Processing/Cleaning the Data
