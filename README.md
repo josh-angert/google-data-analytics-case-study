@@ -30,15 +30,37 @@ The Director of Marketing has assigned me with the first question: How do annual
 
 ### 3. Prepraring the Data
 -----------
-To answer this business question, I have been given access to Cyclistic's historical trip data, [located here](https://divvy-tripdata.s3.amazonaws.com/index.html).
-- Note: The trip datasets have a different name (i.e., Divvy) because Cyclistic is a fictional company. For the purposes of this case study, using the Divvy trip datasets are appropriate and will enable me to answer the business question. The data has been made available by Motivate International Inc. under this [license](https://www.divvybikes.com/data-license-agreement).
+To answer this business question, I have been given access to Cyclistic's historical trip data, [located here](https://divvy-tripdata.s3.amazonaws.com/index.html). (Note: The trip datasets have a different name (i.e., Divvy) because Cyclistic is a fictional company. For the purposes of this case study, using the Divvy trip datasets are appropriate and will enable me to answer the business question. The data has been made available by Motivate International Inc. under this [license](https://www.divvybikes.com/data-license-agreement).
 
 To prepare the data for analysis, I went through the following steps:
-1. Downloaded 12 months of trip data (stored as 12 separate CSV files) with a total of ~5 million rows
-2. Noted the following **_limitations_** with the data:
-   - Does not contain rider info
-   - Does not contain station info
-   - Item 3
+1. Downloaded 12 months of trip data (stored as 12 separate CSV files with a total of ~5 million rows). The files represent trips from October 2020 - September 2021
+2. Explored the files to get a sense of the structure of the data, the attributes contained within each file and each attribute's data types 
+
+    | **Column**        | **Description**  | **Type**  |
+    | ------------- |-------------| ---------|
+    | ride_id       | ID of the bike ride | String |
+    | rideable_type | Type of bike rented (classic, docked or electric)  |   String |
+    | started_at    | Date/time the bike ride began     |   Date/time |
+    | ended_at      | Date/time the bike ride ended | Date/time |
+    | start_station_name | Name of the starting station   |   String |
+    | start_station_id | ID of the start station     |    String |
+    | end_station_name     | Name of the end station | String |
+    | end_station_id      | ID of the end station    |   String |
+    | start_lat | Latitude of the bike when the ride began     |    Decimal |
+    | start_lng | Longitude of the bike when the ride began      |    Decimal |
+    | end_lat | Latitude of the bike when the ride ended      |    Decimal |
+    | end_lng | Longitude of the bike when the ride ended     |    Decimal |
+    | member_casual | Type of rider (Annual Member or Casual)   |    String |
+
+
+
+
+
+
+4. Identified the following limitations with the data:
+   - **No rider information**: 
+   - No distance information
+   - No station information
 
 
 ### 4. Processing/Cleaning the Data
@@ -50,7 +72,6 @@ To prepare the data for analysis, I went through the following steps:
 
 ### 6. Sharing/Visualizing the Data
 -----------
-
 
 ### 7. Conclusion
 -----------
