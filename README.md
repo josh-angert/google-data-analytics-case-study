@@ -62,7 +62,9 @@ To prepare the data for analysis, I went through the following steps:
 
 ### 4. Processing/Cleaning the Data
 -----------
-The steps listed below highlight the process I followed to organize, clean and transform the data to prepare it for analysis
+The steps listed below highlight the process I followed to organize, clean and transform the data to prepare it for analysis:
+- **_Tools used_**: I used Microsoft SQL Server to process the data, primarily because it is widely rated as one of the top relational database management systems in the market, and this case study provided me with a great opportunity to become more familiar with the software.
+- **_Organized the Data_**: 
 
 
 ### 5. Analyzing the Data
