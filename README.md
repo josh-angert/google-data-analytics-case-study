@@ -34,7 +34,7 @@ To answer this business question, I have been given access to Cyclistic's histor
 
 To prepare the data for analysis, I went through the following steps:
 1. Downloaded 12 months of trip data (stored as 12 separate CSV files with a total of ~5 million rows). The files represent trips from October 2020 - September 2021
-2. Explored the files to get a sense of the structure of the data, the attributes contained within each file and each attribute's data types 
+2. Explored the files to get a sense of the structure of the data, the attributes contained within each file and each attribute's data types:
 
     | **Column**        | **Description**  | **Type**  |
     | ------------- |-------------| ---------|
@@ -53,14 +53,10 @@ To prepare the data for analysis, I went through the following steps:
     | member_casual | Type of rider (Annual Member or Casual)   |    String |
 
 
-
-
-
-
-4. Identified the following limitations with the data:
-   - **No rider information**: 
-   - No distance information
-   - No station information
+3. Identified the following limitations with the data:
+   - **_No rider information_**: 
+   - **_No distance information_**:
+   - **_No station information_**:
 
 
 ### 4. Processing/Cleaning the Data
