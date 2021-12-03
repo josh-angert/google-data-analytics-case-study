@@ -24,7 +24,7 @@ I created various SQL queries (using Microsoft SQL Server Management Studio) and
   - [Creating a new "Stations" table](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/3.%20Create%20Stations.sql)
   - [Analyzing the data](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/4.%20Analyze.sql)
 - **Tableau Dashboard**: 
-  - [Click Here](https://public.tableau.com/views/Book2_16380472614180/Dashboard42?:language=en-US&:retry=yes&:display_count=n&:origin=viz_share_link)
+  - [Click Here](https://public.tableau.com/views/Book2_16380472614180/Dashboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
 
 The content in the following sections describes the process I followed to complete this case study.
 
@@ -100,7 +100,7 @@ I used **_Microfto SQL Server_** in this stage as well, and wrote various querie
 
 ### 6. Visualizing/Sharing the Data
 -----------
-To wrap things up, I created a dashboard (using **_Tableau_**) to summarize the key insights needed to answer the business question at hand: _How do Annual Members differ from Casual Riders?_ [Here is a link to the Tableau dashboard](https://public.tableau.com/views/Book2_16380472614180/Dashboard42?:language=en-US&:display_count=n&:origin=viz_share_link).
+To wrap things up, I created a dashboard (using **_Tableau_**) to summarize the key insights needed to answer the business question at hand: _How do Annual Members differ from Casual Riders?_ [Here is a link to the Tableau dashboard](https://public.tableau.com/views/Book2_16380472614180/Dashboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link).
 
 And here is a screenshot of the dashboard:
 
@@ -108,7 +108,7 @@ And here is a screenshot of the dashboard:
 
 ### 7. Conclusion
 -----------
-Here are the key differences between Annual Members and Casual Riders:
-1. Test
-2. Test
+Here are the key differences between Annual Members and Casual Riders (all insights are derived based on bike rides taken between October 2020 - September 2021):
+1. There were **8% more bike rides** with Annual Members than there were with Casual Riders
+2. 
 
