@@ -106,9 +106,10 @@ To wrap things up, I created a dashboard (using **_Tableau_**) to summarize the 
 
 And here is a screenshot of the dashboard:
 
-<img src="https://github.com/josh-angert/google-data-analytics-case-study/blob/main/Dashboard%20screenshot.PNG" width="600">
+<img src="https://github.com/josh-angert/google-data-analytics-case-study/blob/main/Dashboard%20screenshot.PNG" width="700">
 
 ### 7. Conclusion
 -----------
-
+Here are the key differences between Annual Members and Casual Riders:
+1. 
 
