@@ -96,6 +96,7 @@ I used **_Microsoft SQL Server_** in this stage as well, and wrote various queri
 - Average duration of rides (by day and month)
 - Number of rides by bike type (i.e., electric, docked or classic), grouped by member type
 - Number or riders per station (I combined station lat/long coordinates with the total number of rides from each station, allowing me to create a heat map in Tableau)
+- Top 3 most popular stations (based on number of rides) for Members and Casual Riders
 
 
 ### 6. Visualizing/Sharing the Data
