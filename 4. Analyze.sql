@@ -80,9 +80,9 @@ VOLUME OF RIDES PER DAY (AS A PERCENT OF TOTAL RIDES BY MEMBER TYPE)
 Considering that there are about 400,000 more membership rides than there are casual rides, the number of rides can be normalized as a percent 
 (vs a count). To calculate the percent, the number of rides on a given weekday is simply divided by the total number of rides for that member type.
 For example:
-	- 50 membership rides on Sundays
-	- 100 total membership rides
-	- Therefore, Sunday's account for 50% of member's rides (50 / 100 = 50%)
+	- 50 Annual Member rides on Sundays
+	- 100 total Annual Member rides
+	- Therefore, 50% of the rides taken by Annual Members take place on Sundays (50 / 100 = 50%)
 */
 
 SELECT
