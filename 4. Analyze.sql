@@ -82,7 +82,7 @@ Considering that there are about 400,000 more membership rides than there are ca
 For example:
 	- 50 Annual Member rides on Sundays
 	- 100 total Annual Member rides
-	- Therefore, 50% of the rides taken by Annual Members take place on Sundays (50 / 100 = 50%)
+	- Therefore, 50% of the rides taken by Annual Members occur on Sundays (50 / 100 = 50%)
 */
 
 SELECT
