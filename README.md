@@ -92,7 +92,7 @@ This section highlights how I went about preparing the data for analysis:
 ### 5. Analyzing the Data
 -----------
 I used **_Microsoft SQL Server_** in this stage as well, and wrote various queries (using CASE statements, Window Functions, Joins and aggregations) to gain insights into the differences between Annual Members and Casual Riders. [Here is a link to the SQL code](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/4.%20Analyze.sql) (**Note**: the code includes comments which explain why I chose to use certain queries, and the results of those queries). The following is a brief list of some of the queries used:
-- Total number of bike rides (for the full 12-month period): There are about 8% more bike rides with Annual Members than there are with Casual Riders (about 400,000 more).
+- Total number of bike rides (for the full 12-month period): There are about 8% more bike rides with Annual Members than there are with Casual Riders (about 400,000 more)
 - Number of rides per day and month
 - Average duration of rides per day and month
 - Number of rides by bike type (i.e., Electric, Docked, or Classic), grouped by member type
