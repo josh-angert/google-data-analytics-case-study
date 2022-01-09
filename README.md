@@ -15,7 +15,7 @@
 
 ### 1. Introduction 
 ------------
-The scenario for this Case Study is as follows: I am a junior data analyst working in the marketing analyst team at Cyclistic, a fictional bike-share company in Chicago. The director of marketing believes the company’s future success depends on maximizing the number of annual memberships. Therefore, the marketing team wants to understand how casual riders and annual members use Cyclistic bikes differently. (Customers who purchase single-ride or full-day passes are referred to as casual riders. Customers who purchase annual memberships are Cyclistic members.)
+The scenario for this Case Study is as follows: I am a junior data analyst working in the marketing analyst team at Cyclistic, a fictional bike-share company in Chicago. The director of marketing believes the company’s future success depends on maximizing the number of annual memberships. Therefore, the marketing team wants to understand how casual riders and annual members use Cyclistic bikes differently. (Customers who purchase single-ride or full-day passes are referred to as Casual Riders, and customers who purchase annual memberships are referred to as Annual Members.)
 
 I created various SQL queries (using Microsoft SQL Server Management Studio) and Tableau to process, analyze and visualize the data from this case study. Links to the SQL scripts and my Tableau dashboard can be found below. 
 - **SQL scripts**:
@@ -26,21 +26,21 @@ I created various SQL queries (using Microsoft SQL Server Management Studio) and
 - **Tableau Dashboard**: 
   - [Click Here](https://public.tableau.com/views/Book2_16380472614180/Dashboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
 
-The content in the following sections describes the process I followed to complete this case study.
+The following sections describe the process I followed to complete this Case Study.
 
 
 ### 2. Business Task
 -----------
-The Director of Marketing has set a clear goal: Design marketing strategies aimed at converting casual riders into annual members. Three questions will guide the future marketing program:
-1. How do annual members and casual riders use Cyclistic bikes differently?
-2. Why would casual riders buy Cyclistic annual memberships?
-3. How can Cyclistic use digital media to influence casual riders to become members?
+The Director of Marketing set a clear goal: Design marketing strategies to convert Casual Riders into Annual Members. Three questions guide the future marketing program:
+1. How do Casual Riders and Annual Members use Cyclistic bikes differently?
+2. Why would Casual Riders buy Cyclistic annual memberships?
+3. How can Cyclistic use digital media to influence casual riders to become Annual Members?
 
-The Director of Marketing has assigned me with the first question: _How do annual members and casual riders use Cyclistic bikes differently?_
+The Director of Marketing has tasked me with answering the first question: _How do Casual Riders and Annual Members use Cyclistic bikes differently?_
 
 ### 3. Preparing the Data
 -----------
-To answer this business question, I have been given access to Cyclistic's historical trip data, [located here](https://divvy-tripdata.s3.amazonaws.com/index.html). (Note: The trip datasets have a different name (i.e., Divvy) because Cyclistic is a fictional company. For the purposes of this case study, using the Divvy trip datasets are appropriate and will enable me to answer the business question. The data has been made available by Motivate International Inc. under this [license](https://www.divvybikes.com/data-license-agreement).
+To answer this business question, I was provided access to Cyclistic's historical trip data, [located here](https://divvy-tripdata.s3.amazonaws.com/index.html). (Note: The trip datasets have a different name (i.e., Divvy) because Cyclistic is a fictional company. For this Case Study, using the Divvy trip datasets are appropriate and will enable me to answer the business question. The data was made available by Motivate International Inc. under this [license](https://www.divvybikes.com/data-license-agreement).
 
 To prepare the data for analysis, I went through the following steps:
 1. Downloaded 12 months of trip data (stored as 12 separate CSV files with a total of ~5 million rows). The files represent trips from October 2020 - September 2021.
@@ -64,10 +64,10 @@ To prepare the data for analysis, I went through the following steps:
 
 
 3. Identified the following limitations about the data:
-   - **_No rider information_**: The dataset did not include any personal or demographic information about the riders. Therefore, I won't be able to identify any rider trends based on age, gender, etc...
-   - **_No distance information_**: The dataset _does_ include latitude/longitude coordinates for the start/end of the bike rides. However, using the lat/long data provided, I could only calculate the straight-line (Euclidean) distance between the starting and ending points (not the actual distance the rider traveled on the road). 
-        - For example, the starting/ending locations may only be 0.5 miles apart, however the rider may have taken the bike 2 or 3 miles around the city before returning the bike to the ending location. 
-   - **_No station information_**: The only station information in the dataset is the name of the starting & ending stations. The latitude and longitude fields provided in the dataset represent the GPS coordinates of the bike that was rented, not the GPS coordinates of the station from which it was rented/returned. For example, each station in the dataset has thousands of lat/long coordinates associated with it (vs a single lat/long for the station itself).
+   - **_No Rider Information_**: The dataset did not include any personal or demographic information about the riders. Therefore, I was unable to identify any rider trends based on age, gender, etc...
+   - **_No Information on Total Distance Traveled_**: The dataset includes latitude/longitude coordinates of the starting and ending points of each ride. However, there was no way to determine which of the many possible routes a given rider would travel between their trip's starting and ending points.
+        - For example, the starting and ending locations may only be 0.5 miles apart; however, the rider may have ridden the bike 2 or 3 miles around the city before reaching the ending location. 
+   - **_No Station GPS Coordinates_**: The only station information in the dataset is that of each starting and ending station's name. The latitude and longitude fields provided represent the GPS coordinates of the rented bike, not the GPS coordinates of the station from which it was rented/returned. In order to plot the location of each station on a heat map, a unique GPS coordinate for each station needed to be calcualted.
 
 
 ### 4. Processing/Cleaning the Data
