@@ -68,7 +68,7 @@ To prepare the data for analysis, I went through the following steps:
    - **_No Information on Total Distance Traveled_**: The dataset includes latitude/longitude coordinates of the starting and ending points of each ride. However, there was no way to determine which of the many possible routes a given rider would travel between their trip's starting and ending points.
         - For example, the starting and ending locations may only be 0.5 miles apart; however, the rider may have ridden the bike 2 or 3 miles around the city before reaching the ending location. 
    - **_No Station GPS Coordinates_**: The only station information in the dataset is that of each starting and ending station's name. The latitude and longitude fields provided represent the GPS coordinates of the rented bike, not the GPS coordinates of the station from which it was rented/returned. 
-        - Note: While this was a limitation, I developed a solution using [this SQL script](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/3.%20Create%20Stations.sql) to calculate a unique GPS coordinate for each station needed). This allowed me plot each station's location on a map of Chicago and visualize the volume of rides from each station.
+        - Note: While this was a limitation, I developed a solution using [this SQL script](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/3.%20Create%20Stations.sql) to calculate a unique GPS coordinate for each station. This allowed me plot each station's location on a map of Chicago and visualize the volume of rides from each station.
 
 
 ### 4. Processing/Cleaning the Data
