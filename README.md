@@ -95,14 +95,14 @@ I used **_Microsoft SQL Server_** in this stage as well, and wrote various queri
 - Total number of bike rides (for the full 12-month period): There are about 8% more bike rides with Annual Members than there are with Casual Riders (about 400,000 more).
 - Number of rides per day and month
 - Average duration of rides per day and month
-- Number of rides by bike type (i.e., electric, docked, or classic), grouped by member type
+- Number of rides by bike type (i.e., Electric, Docked, or Classic), grouped by member type
 - Number of riders per station (I combined station lat/long coordinates with the total number of rides from each station, allowing me to create a heat map in Tableau. A user can filter the heat map between member types, zoom in and out, and reposition the map.)
 - Top 3 most popular stations (based on number of rides) for Annual Members and Casual Riders
 
 
 ### 6. Visualizing/Sharing the Data
 -----------
-To wrap things up, I created a dashboard (using **_Tableau_**) to summarize the key insights needed to answer the business question at hand: _How do Annual Members differ from Casual Riders?_ [Here is a link to the Tableau dashboard](https://public.tableau.com/views/Book2_16380472614180/Dashboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link).
+To wrap things up, I created a dashboard (using **_Tableau_**) to vizualize the key insights needed to answer the business question at hand: _How do Annual Members differ from Casual Riders?_ [Here is a link to the Tableau dashboard](https://public.tableau.com/views/Book2_16380472614180/Dashboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link).
 
 And here is a screenshot of the dashboard:
 
@@ -110,13 +110,13 @@ And here is a screenshot of the dashboard:
 
 ### 7. Conclusion
 -----------
-Here are the key differences between Annual Members and Casual Riders (source data is from October 2020 - September 2021):
+The insights obtained from the analysis are presented below as differences between Annual Members and Casual Riders (source data is from October 2020 - September 2021):
 
-| **Measure**       | **Insights**  |
+| **Measure**       | **Differences Between Annual Members and Casual Riders**  |
 | ----------------- |-------------|
 | # of Rides        | There were **8% more bike rides** with Annual Members than there were with Casual Riders          |
 | Time of Year      | Peak popularity for both Annual Members _and_ Casual Riders is **between June and September**        |
 | Day of Week       |**Casual Riders prefer _weekends_**, whereas **Annual Members prefer the _weekdays_**              |
 | Avg Ride Duration | Casual Riders, on average, ride their bikes about **2X longer** than Annual Members (average duration of 32 min for Casual Riders vs 14 min for Annual Members)|
-| Type of Bike      | Classic bikes account for **59% of rides with Members**, whereas Casual Riders use Classic bikes 48% of the time. Also, Casual Riders use Docked Bikes **7% more often than Members**  |                               
-| Popular Stations  | Casual Riders overwhelmingly start their rides **near tourist attractions** (i.e., Millennium Park, Navy Pier, etc.) whereas the stations with the highest activity for Annual Members are spread more evenly throughout the city     |
+| Type of Bike      | Classic bikes account for **59% of rides with Annual Members**, whereas Casual Riders use Classic bikes 48% of the time. Also, Casual Riders use Docked bikes **7% more often than Members**  |                               
+| Popular Stations  | Casual Riders overwhelmingly start their rides **near tourist attractions** (e.g., Millennium Park, Navy Pier, etc.) whereas the stations with the highest activity for Annual Members are spread more evenly throughout the city     |
