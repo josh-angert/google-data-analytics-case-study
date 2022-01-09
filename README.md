@@ -68,36 +68,36 @@ To prepare the data for analysis, I went through the following steps:
    - **_No Information on Total Distance Traveled_**: The dataset includes latitude/longitude coordinates of the starting and ending points of each ride. However, there was no way to determine which of the many possible routes a given rider would travel between their trip's starting and ending points.
         - For example, the starting and ending locations may only be 0.5 miles apart; however, the rider may have ridden the bike 2 or 3 miles around the city before reaching the ending location. 
    - **_No Station GPS Coordinates_**: The only station information in the dataset is that of each starting and ending station's name. The latitude and longitude fields provided represent the GPS coordinates of the rented bike, not the GPS coordinates of the station from which it was rented/returned. 
-        - Note: While this was a limitation, I developed a solution using [this SQL script](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/3.%20Create%20Stations.sql) to calculate a unique GPS coordinate for each station. This allowed me plot each station's location on a map of Chicago and visualize the volume of rides from each station.
+        - Note: While this was a limitation, I developed a solution using [this SQL script](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/3.%20Create%20Stations.sql) to calculate a unique GPS coordinate for each station. This allowed me plot each station's location on a map of Chicago and visualize the number of bikes rented from each station.
 
 
 ### 4. Processing/Cleaning the Data
 -----------
 This section highlights how I went about preparing the data for analysis:
-- **_Tools used_**: I used Microsoft SQL Server to process the data, primarily because it is widely rated as one of the top relational database management systems in the market, and this case study provided me with a great opportunity to become more familiar with the software.
+- **_Tools used_**: I used Microsoft SQL Server to process the data, primarily because it is widely rated as one of the top relational database management systems in the market. This Case Study provided me with an opportunity to become more familiar with the software.
 - **_Steps Taken_**: 
   - Imported the 12 CSV files into SQL Server
-  - Combined all 12 CSV files and created new data attributes (which will be used during analysis) using temp tables, Unions, Joins and CREATE/ALTER commands. [Here is a link to the SQL script](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/1.%20Organize.sql). The new data attributes created by this code include new fields for:
+  - Combined all 12 CSV files and created new data attributes using temp tables, Unions, Joins and CREATE/ALTER commands. [Here is a link to the SQL script](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/1.%20Organize.sql). I created the new data attributes for use during analysis. The new attributes include new fields for:
     - Duration of the ride (in minutes and seconds)
     - Starting day number (i.e., 1 = Sunday, 2 = Monday, etc.) & Starting day name (i.e., name of the day of the week)
-    - Ending day number & name
+    - Ending day number & ending day name
     - Month number & month name
     - Day type (i.e., weekend or week day)
     - Season
-  - Cleaned the data (removed non-unique/duplicate values & incorrect data, checked for NULL values and removed NULLs using CTEs, conditional aggregation and DELETE/UPDATE commands. [Here is a link to the SQL script](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/2.%20Clean.sql).
+  - Cleaned the data (removed non-unique/duplicate values and incorrect data, checked for NULL values and removed NULLs using CTEs, conditional aggregation and DELETE/UPDATE commands. [Here is a link to the SQL script](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/2.%20Clean.sql).
     - Note, the script contains comments which explain why I chose to use certain queries, and the results of those queries). 
-  - Created a new table, called Stations. The table contains a distinct list of stations from the dataset (784 stations) and their respective latitude/longitude coordinates. I utilized temp tables, Unions and SELECT/INSERT INTO commands. [Here is a link to the SQL script](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/3.%20Create%20Stations.sql).
+  - Created a new table, called Stations. The table contains a list of all stations from the dataset (784 stations) and calculates their respective latitude/longitude coordinates. I utilized temp tables, Unions and SELECT/INSERT INTO commands. [Here is a link to the SQL script](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/3.%20Create%20Stations.sql).
 
 
 ### 5. Analyzing the Data
 -----------
-I used **_Microsoft SQL Server_** in this stage as well, and wrote various queries (using CASE statements, Window Functions, Joins and aggregations) in order to gain insights about the differences between Annual Members and Casual riders. [Here is a link to the SQL code](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/4.%20Analyze.sql) (**Note**: the code includes comments which explain why I chose to use certain queries, and the results of those queries). The following is a brief list of some of the queries used:
-- Total number of bike rides (for the full 12-month period): There are about 8% more bike rides with Annual Members than there are with casual riders (about 400,000 more).
-- Number or rides per day and month
-- Average duration of rides (by day and month)
-- Number of rides by bike type (i.e., electric, docked or classic), grouped by member type
-- Number or riders per station (I combined station lat/long coordinates with the total number of rides from each station, allowing me to create a heat map in Tableau)
-- Top 3 most popular stations (based on number of rides) for Members and Casual Riders
+I used **_Microsoft SQL Server_** in this stage as well, and wrote various queries (using CASE statements, Window Functions, Joins and aggregations) to gain insights into the differences between Annual Members and Casual Riders. [Here is a link to the SQL code](https://github.com/josh-angert/google-data-analytics-case-study/blob/main/4.%20Analyze.sql) (**Note**: the code includes comments which explain why I chose to use certain queries, and the results of those queries). The following is a brief list of some of the queries used:
+- Total number of bike rides (for the full 12-month period): There are about 8% more bike rides with Annual Members than there are with Casual Riders (about 400,000 more).
+- Number of rides per day and month
+- Average duration of rides per day and month
+- Number of rides by bike type (i.e., electric, docked, or classic), grouped by member type
+- Number of riders per station (I combined station lat/long coordinates with the total number of rides from each station, allowing me to create a heat map in Tableau. A user can filter the heat map between member types, zoom in and out, and reposition the map.)
+- Top 3 most popular stations (based on number of rides) for Annual Members and Casual Riders
 
 
 ### 6. Visualizing/Sharing the Data
